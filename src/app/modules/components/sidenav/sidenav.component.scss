@@ -1,0 +1,34 @@
+.sidenav {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+.sidenav a{
+  color: #333;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sidenav a:hover {
+  // background-color: rgba(104, 195, 255, 0.742);
+  background-color: var(--sidenav-item-hover);
+  color: var(--white-color);
+
+  & .icon {
+    background-color: var(--white-color);
+  }
+}
+.sidenav a.active {
+  background-color: var(--sidenav-bg);
+  color: var(--white-color);
+
+  & .icon {
+    background-color: var(--white-color);
+  }
+}

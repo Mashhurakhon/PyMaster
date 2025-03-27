@@ -1,0 +1,33 @@
+<div class="dash-header">
+    <ng-content select="[toggle-btn]"></ng-content>
+
+    <div class="user">
+        <app-theme></app-theme>
+        <div class="notification cursor-pointer">
+            <span class="icon icon-notification icon-size-32"></span>
+            <span class="counter">0</span>
+        </div>
+        <div class="user-info">
+            <span>John Doe</span>
+            <div class="user-menu">
+                <img 
+                  class="user-image"
+                  src="https://cdn0.iconfinder.com/data/icons/team-work-and-organization-2/128/78-1024.png" 
+                  alt="logo" 
+                  [matMenuTriggerFor]="menu"
+                >
+                <mat-menu #menu="matMenu">
+                    <button mat-menu-item>
+                      <mat-icon>dialpad</mat-icon>
+                      <span>Redial</span>
+                    </button>
+                    <button mat-menu-item>
+                      <mat-icon>notifications_off</mat-icon>
+                      <span>выход</span>
+                    </button>
+                  </mat-menu>
+            </div>
+            
+        </div>
+    </div>
+</div>

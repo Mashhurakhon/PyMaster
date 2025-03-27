@@ -1,0 +1,72 @@
+.icon {
+    display: inline-block;
+    background-color: black;
+    -webkit-mask-size: contain !important;
+    mask-size: contain !important;
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    
+    &-size-20 {
+        width: 20px;
+        height: 20px;
+    }
+    &-size-24 {
+        width: 24px;
+        height: 24px;
+    }
+    &-size-28 {
+        width: 28px;
+        height: 28px;
+    }
+    &-size-32 {
+        width: 32px;
+        height: 32px;
+    }
+    
+    &-course {
+        -webkit-mask: url('../../assets/icons/course.svg') no-repeat 50% 50%;
+        mask: url('../../assets/icons/course.svg') no-repeat 50% 50%;
+    }
+    &-dashboard {
+        -webkit-mask: url('../../assets/icons/dashboard.svg') no-repeat 50% 50%;
+        mask: url('../../assets/icons/dashboard.svg') no-repeat 50% 50%;
+    }
+    &-profile {
+        -webkit-mask: url('../../assets/icons/profile.svg') no-repeat 50% 50%;
+        mask: url('../../assets/icons/profile.svg') no-repeat 50% 50%;
+    }
+    &-progress {
+        -webkit-mask: url('../../assets/icons/progress.svg') no-repeat 50% 50%;
+        mask: url('../../assets/icons/progress.svg') no-repeat 50% 50%;
+    }
+    &-certificate {
+        -webkit-mask: url('../../assets/icons/certificate.svg') no-repeat 50% 50%;
+        mask: url('../../assets/icons/certificate.svg') no-repeat 50% 50%;
+    }
+    &-notification {
+        -webkit-mask: url('../../assets/icons/notification.svg') no-repeat 50% 50%;
+        mask: url('../../assets/icons/notification.svg') no-repeat 50% 50%;
+    }
+    &-notification-silent {
+        -webkit-mask: url('../../assets/icons/notification-slient.svg') no-repeat 50% 50%;
+        mask: url('../../assets/icons/notification-slient.svg') no-repeat 50% 50%;
+    }
+    &-menu-left {
+        -webkit-mask: url('../../assets/icons/burger-menu-left.svg') no-repeat 50% 50%;
+        mask: url('../../assets/icons/burger-menu-left.svg') no-repeat 50% 50%;
+    }
+    &-menu-right {
+        -webkit-mask: url('../../assets/icons/burger-menu-right.svg') no-repeat 50% 50%;
+        mask: url('../../assets/icons/burger-menu-right.svg') no-repeat 50% 50%;
+    }
+    &-sun {
+        -webkit-mask: url('../../assets/icons/sun.svg') no-repeat 50% 50%;
+        mask: url('../../assets/icons/sun.svg') no-repeat 50% 50%;
+    }
+    &-moon {
+        -webkit-mask: url('../../assets/icons/moon.svg') no-repeat 50% 50%;
+        mask: url('../../assets/icons/moon.svg') no-repeat 50% 50%;
+    }
+}

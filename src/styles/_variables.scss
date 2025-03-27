@@ -1,0 +1,76 @@
+:root {
+  --white-color: #ffffff;
+  --black-color: #000;
+  --primary-color: #2fa8ff;
+  --disabled-color: #757575;
+
+  --btn-success-bg: #188700;
+  --btn-success-bg-hover: lighten(btn-success-bg, 10%);
+  --btn-success-bg-focus: lighten(btn-success-bg, 5%);
+
+  // btn-primary
+  --btn-primary: #00ccff;
+  --btn-primary-hover: rgb(0, 170, 255);
+  --btn-primary-bg-active: linear-gradient(91deg, #2baad2 0%, #1b83cf 100%);
+  --btn-primary-border: #227ebd;
+  // btn-secondary
+  --btn-secondary-border: #2dcdff;
+  --btn-secondary-hover: #2db2dc;
+  --btn-secondary-bg-hover: #edfaff;
+  --btn-secondary-bg-active: #d1f1ff;
+  //btn-default
+  --btn-default-bg: rgba(255, 255, 255, 0.5);
+  --btn-default-color: var(--black-color);
+  //btn-gray
+  --btn-gray-bg: rgba(0, 0, 0, 0.08);
+  //bg-danger
+  --btn-danger-bg: #ba2121;
+  //bg-warning
+  --btn-warning-bg: #eec832;
+  //input
+  --input-border-color: #bebebe;
+  --input-bg-color: var(--white-color);
+  --input-text-color: var(--black-color);
+  --input-active-border: #88d6ef;
+  --input-invalid-border: #ffccdb;
+  --input-invalid-color: #ff4980;
+  // sidenav
+  --sidenav-bg: rgba(62, 178, 254, 0.892);
+  --sidenav-item-hover:  rgba(104, 195, 255, 0.862);
+  --sidenav-item-active: #d5d5d5;
+}
+
+html.dark {
+  color-scheme: dark;
+  --primary-color: #00d2e0;
+  //auth
+  --bg-auth-layout: rgba(0, 0, 0, 0.7);
+  --bg-auth-color: rgba(0, 0, 0, 0.6);
+  --image-opacity: 0.5;
+  --logo-bg: #303030;
+
+  // btn-primary
+  --btn-primary: linear-gradient(91deg, #00828a 0%, #1697bf 100%);
+  --btn-primary-hover: linear-gradient(91deg, #00676d 0%, #0e7292 100%);
+  --btn-primary-bg-active: linear-gradient(91deg, #00656b 0%, #116985 100%);
+  --btn-success-bg: linear-gradient(91deg, #056112 0%, #188700 100%);
+  --btn-primary-border: #00cfcf;
+  // btn-secondary
+  --btn-secondary-border: #20acd8;
+  --btn-secondary-hover: #186f75;
+  --btn-secondary-bg-hover: #162c2e;
+  --btn-secondary-bg-active: #0b1d1f;
+  //btn-default
+  --btn-default-bg: var(--bg-auth-color);
+  --btn-default-color: var(--white-color);
+  //btn-undefault
+  --btn-undefault-color: var(--black-color);
+  //btn-gray
+  --btn-gray-bg: rgba(255, 255, 255, 0.05);
+  //input
+  --input-border-color: #464646;
+  --input-bg-color: #2c2c2c;
+  --input-text-color: var(--white-color);
+  --input-active-border: var(--btn-secondary-hover);
+  --input-invalid-border: #ff477e;
+}

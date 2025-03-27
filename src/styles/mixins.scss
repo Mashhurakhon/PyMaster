@@ -1,0 +1,7 @@
+@mixin text($size, $line-height, $fort-weight, $color: var(--black-color)) {
+    font-size: $size;
+    font-weight: $fort-weight;
+    line-height: $line-height;
+    color: $color;
+  }
+  

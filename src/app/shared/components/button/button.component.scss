@@ -1,0 +1,116 @@
+.btn {
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+  color: var(--black-color);
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  outline: none;
+  position: relative;
+  white-space: nowrap;
+
+
+  &-success {
+    padding: 9px 10px;
+    background: var(--btn-success-bg);
+    border: 1px solid var(--btn-success-bg);
+    color: var(--white-color);
+
+    &:hover {
+      opacity: 0.9;
+    }
+
+    &:focus {
+      opacity: 0.85;
+    }
+  }
+
+  &-primary {
+    background: var(--btn-primary);
+    border: 1px solid var(--btn-primary);
+    color: var(--white-color);
+
+    ::ng-deep .loader__spin {
+      border-color: transparent;
+      border-bottom-color: var(--white-color);
+    }
+
+    &:hover {
+      background: var(--btn-primary-hover);
+      border: 1px solid var(--btn-primary-hover);
+    }
+
+    &:focus {
+      background: var(--btn-primary-hover);
+      //border: 1px solid var(--btn-primary-border);
+    }
+  }
+
+  &-secondary {
+    border: 1px solid var(--btn-secondary-border);
+    background: transparent;
+    color: var(--btn-default-color);
+
+    &:hover {
+      border: 1px solid var(--btn-secondary-hover);
+      background: var(--btn-secondary-bg-hover);
+    }
+
+    &:focus {
+      border: 1px solid var(--btn-secondary-hover);
+      background: var(--btn-secondary-bg-active);
+    }
+  }
+
+  &-default {
+    background: var(--btn-default-bg);
+    padding: 10px 6px;
+    color: var(--btn-default-color);
+
+  }
+
+  &-gray {
+    border-radius: 16px;
+    background: var(--btn-gray-bg);
+    padding: 9px 10px;
+    color: var(--btn-default-color);
+
+    ::ng-deep .icon:not(.icon-refresh) {
+      background: var(--btn-default-color);
+      opacity: 0.5;
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &-danger {
+    padding: 9px 10px;
+    background: var(--btn-danger-bg);
+    border: 1px solid var(--btn-danger-bg);
+    color: var(--white-color);
+  }
+  &-warning {
+    padding: 9px 10px;
+    background: var(--btn-warning-bg);
+    border: 1px solid var(--btn-warning-bg);
+    color: var(--white-color);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  &-link {
+    text-decoration: underline;
+    color: var(--primary-color);
+    width: auto;
+    padding: 0;
+    text-decoration-skip: auto;
+  }
+}

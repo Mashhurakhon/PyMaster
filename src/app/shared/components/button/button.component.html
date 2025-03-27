@@ -1,0 +1,6 @@
+<button [type]="type" class="btn btn-{{ color }} btn-{{ size}}" [disabled]="disabled">
+    <ng-content></ng-content>
+    @if(isLoading) {
+        <mat-spinner></mat-spinner>
+    }
+</button>
