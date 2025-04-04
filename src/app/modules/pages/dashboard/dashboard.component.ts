@@ -41,4 +41,5 @@ export class DashboardComponent {
     this.menuState = this.isOpen ? 'left' : 'right';
     this.sidenav.toggle();
   }
+
 }

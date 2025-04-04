@@ -1,7 +1,7 @@
 <mat-sidenav-container class="example-container" [hasBackdrop]="hasBackDrop">
   <mat-sidenav #sidenav [mode]="sidebarMode" position="start" class="sidebar">
     <div class="logo">
-      <img src="assets/images/logo.png" alt="logo" class="logo-image">
+      <img src="assets/images/logo.png" alt="logo" class="logo-image" />
       <span class="logo-name">PyMaster</span>
     </div>
     <app-sidenav></app-sidenav>
@@ -9,7 +9,12 @@
 
   <mat-sidenav-content>
     <app-dashboard-header class="dash-header">
-      <button toggle-btn mat-mini-fab (click)="toggleSidebar()" class="toggle-btn">
+      <button
+        toggle-btn
+        mat-mini-fab
+        (click)="toggleSidebar()"
+        class="toggle-btn"
+      >
         <span class="icon icon-menu-{{ menuState }} icon-size-32"></span>
       </button>
     </app-dashboard-header>

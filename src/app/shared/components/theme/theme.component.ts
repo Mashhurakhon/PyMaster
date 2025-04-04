@@ -14,21 +14,15 @@ export class ThemeComponent {
   private _localStorage = inject(LocalstorageService);
   
 
-  public toggleTheme() {
-    console.log(this._localStorage.get("theme"));
-    
+  public toggleTheme() {    
     if(this._localStorage.get("theme") === "dark") {
       this._localStorage.set('theme', 'light');
       this.html.classList.remove("dark");
       this.themeIcon = "moon";
-    console.log(1);
-
     } else {
       this._localStorage.set('theme', 'dark');
       this.html.classList.add("dark");
       this.themeIcon = "sun";
-    console.log(2);
-
     }
   }
 }

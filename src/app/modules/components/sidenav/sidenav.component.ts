@@ -53,10 +53,4 @@ export class SidenavComponent {
   ];
 
   private router = inject(Router);
-
-  isLinkActive(routeUrl: string): boolean {
-    const baseRouteUrl = this.router.url.split('?')[0];
-    return (baseRouteUrl.includes(routeUrl) && routeUrl !== DASHBOARD_ROUTES.DASHBOARD);    
-  }
-
 }

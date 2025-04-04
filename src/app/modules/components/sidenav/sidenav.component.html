@@ -1,12 +1,12 @@
 <div class="sidenav">
   @for(item of sidebar; track item) {
-    <a
-      mat-button
-      routerLink="/{{ item.link }}"
-      [class.active]="isLinkActive(item.link)"
-    >
-      <span class="icon icon-{{ item.icon }} icon-size-20"></span>
-      {{ item.text }}
-    </a>
+  <a
+    mat-button
+    routerLink="dashboard/{{ item.link }}"
+    routerLinkActive="active"
+  >
+    <span class="icon icon-{{ item.icon }} icon-size-20"></span>
+    {{ item.text }}
+  </a>
   }
 </div>
