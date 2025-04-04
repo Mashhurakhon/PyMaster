@@ -3,6 +3,7 @@ import { RouterModule, Routes } from "@angular/router";
 import { AUTH_ROUTES } from "./auth-routes";
 import { LoginComponent } from "./login/login.component";
 import { RegisterComponent } from "./register/register.component";
+import { ResetPasswordComponent } from "./reset-password/reset-password.component";
 
 export const AuthRoutes: Routes = [
     {
@@ -14,6 +15,11 @@ export const AuthRoutes: Routes = [
         path: AUTH_ROUTES.REGISTER,
         component: RegisterComponent,
         title: "Регистрация"
+    },
+    {
+        path: AUTH_ROUTES.RESET_PASSWORD,
+        component: ResetPasswordComponent,
+        title: 'Сброс пароля'
     }
 ]
 @NgModule({
