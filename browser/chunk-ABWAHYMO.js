@@ -1,0 +1,1 @@
+import{Ab as n,Qb as r,Ub as a,ga as o,zb as s}from"./chunk-OF7L5RAZ.js";var p=class t{static \u0275fac=function(e){return new(e||t)};static \u0275cmp=o({type:t,selectors:[["app-progress"]],standalone:!0,features:[a],decls:2,vars:0,template:function(e,m){e&1&&(s(0,"p"),r(1,"progress works!"),n())}})};export{p as ProgressComponent};

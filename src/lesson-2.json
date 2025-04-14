@@ -1,0 +1,233 @@
+{
+  "lesson": {
+    "id": "uuid",
+    "title": "Название урока",
+    "lessonType": 1,
+    "sessionId": "uuid",
+    "lessonContents": [
+      {
+        "id": "uuid",
+        "orderNumber": 1,
+        "isCompleted": false,
+        "lessonContentType": "Theory",
+        "components": [
+          {
+            "componentTypeId": 1,
+            "content": {
+              "data": "<block><p>Текст теории по теме</p></block>"
+            },
+            "config": {},
+            "orderNumber": 1
+          },
+          {
+            "componentTypeId": 4,
+            "content": {
+              "data": "https://example.com/image.png",
+              "description": "Иллюстрация к уроку"
+            },
+            "config": {},
+            "orderNumber": 2
+          }
+        ]
+      },
+      {
+        "id": "uuid",
+        "orderNumber": 2,
+        "isCompleted": false,
+        "lessonContentType": "Quiz",
+        "components": [
+            {
+                "componentTypeId": 1,
+                "content": {
+                    "data": "<block><p>Какой оператор используется для вывода текста?</p></block>"
+                },
+                "config": {},
+                "orderNumber": 1
+            },
+            {
+                "componentTypeId": 9,
+                "content": {},
+                "config": {},
+                "orderNumber": 2
+            }
+        ],
+        "answer": {
+            "answerTypeId": 6,
+            "options": [
+                { "id": 1, "text": "print", "isCorrect": true },
+                { "id": 2, "text": "display", "isCorrect": false }
+            ]
+        }
+      },
+      {
+          "id": "uuid",
+          "orderNumber": 3,
+          "isCompleted": false,
+          "lessonContentType": "CodingTask",
+          "components": [
+              {
+                  "componentTypeId": 1,
+                  "content": {
+                      "data": "<block><p>Напишите код, который выводит 'Hello, world!'</p></block>"
+                  },
+                  "config": {},
+                  "orderNumber": 1
+              },
+              {
+                  "componentTypeId": 9,
+                  "content": {},
+                  "config": {},
+                  "orderNumber": 2
+              }
+          ],
+          "answer": {
+              "answerTypeId": 2,
+              "expectedCode": "print(\"Hello, world!\")",
+              "testCases": [
+                  { "input": "", "expectedOutput": "Hello, world!" }
+              ]
+          }
+      },
+      {
+          "id": "uuid",
+          "orderNumber": 4,
+          "isCompleted": false,
+          "lessonContentType": "CodeSorting",
+          "components": [
+              {
+                  "componentTypeId": 1,
+                  "content": {
+                      "data": "<block><p>Расположите строки кода в правильном порядке</p></block>"
+                  },
+                  "config": {},
+                  "orderNumber": 1
+              },
+              {
+                  "componentTypeId": 9,
+                  "content": {},
+                  "config": {},
+                  "orderNumber": 2
+              }
+          ],
+          "answer": {
+              "answerTypeId": 4,
+              "codeFragments": [
+                  { "id": 1, "text": "print(\"Hello\")" },
+                  { "id": 2, "text": "name = input(\"Введите имя: \")" },
+                  { "id": 3, "text": "print(\"Привет, \" + name)" }
+              ],
+              "correctOrder": [2, 1, 3]
+          }
+      },
+      {
+          "id": "uuid",
+          "orderNumber": 5,
+          "isCompleted": false,
+          "lessonContentType": "BugFixing",
+          "components": [
+              {
+                  "componentTypeId": 1,
+                  "content": {
+                      "data": "<block><p>Исправьте ошибки в коде</p></block>"
+                  },
+                  "config": {},
+                  "orderNumber": 1
+              },
+              {
+                  "componentTypeId": 9,
+                  "content": {},
+                  "config": {},
+                  "orderNumber": 2
+              }
+          ],
+          "answer": {
+              "answerTypeId": 3,
+              "initialCode": "print(\"Hello, world!\"",
+              "expectedCode": "print(\"Hello, world!\")",
+              "testCases": [
+                  { "input": "", "expectedOutput": "Hello, world!" }
+              ]
+          }
+      },
+      {
+          "id": "uuid",
+          "orderNumber": 6,
+          "isCompleted": false,
+          "lessonContentType": "FillInTheBlanks",
+          "components": [
+              {
+                  "componentTypeId": 1,
+                  "content": {
+                      "data": "<block><p>Дополните строку кода:</p></block>"
+                  },
+                  "config": {},
+                  "orderNumber": 1
+              },
+              {
+                  "componentTypeId": 7,
+                  "content": {
+                      "parts": [
+                          {
+                              "type": 3,
+                              "maxLength": 9
+                          },
+                          {
+                              "type": 1,
+                              "content": "(\"Hello, world!\")"
+                          }
+                      ],
+                      "isCaseSensitive": false
+                  },
+                  "config": {},
+                  "orderNumber": 2
+              },
+              {
+                  "componentTypeId": 9,
+                  "content": {},
+                  "config": {},
+                  "orderNumber": 3
+              }
+          ],
+          "answer": {
+              "answerTypeId": 6,
+              "options": [
+                  { "id": 1, "text": "print", "isCorrect": true },
+                  { "id": 2, "text": "echo", "isCorrect": false }
+              ]
+          }
+      },
+      {
+          "id": "uuid",
+          "orderNumber": 7,
+          "isCompleted": false,
+          "lessonContentType": "ScenarioChallenge",
+          "components": [
+              {
+                  "componentTypeId": 1,
+                  "content": {
+                      "data": "<block><p>Вы разрабатываете калькулятор. Завершите код для вычисления суммы двух чисел.</p></block>"
+                  },
+                  "config": {},
+                  "orderNumber": 1
+              },
+              {
+                  "componentTypeId": 9,
+                  "content": {},
+                  "config": {},
+                  "orderNumber": 2
+              }
+          ],
+          "answer": {
+              "answerTypeId": 5,
+              "scenario": "Завершите код калькулятора, чтобы он правильно складывал числа.",
+              "initialCode": "num1 = int(input())\nnum2 = int(input())\n# Введите недостающий код\nprint()",
+              "expectedCode": "print(num1 + num2)",
+              "testCases": [
+                  { "input": "5\n3", "expectedOutput": "8" },
+                  { "input": "10\n20", "expectedOutput": "30" }
+              ]
+          }
+      }
+    ]
+  }
+}
