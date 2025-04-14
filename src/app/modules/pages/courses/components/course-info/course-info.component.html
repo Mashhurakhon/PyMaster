@@ -1,0 +1,10 @@
+<div class="course-info" [ngClass]="view">
+  <img [src]="course.image" alt="Иллюстрация к курсу" />
+  <p class="title">{{ course.title }}</p>
+  <div class="description">
+    @if(view === 'detail') {
+    <p>Course description:</p>
+    }
+    {{ course.description }}
+  </div>
+</div>

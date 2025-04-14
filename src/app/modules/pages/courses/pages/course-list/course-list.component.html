@@ -1,0 +1,11 @@
+<div class="courses">
+  @for(course of courses; track course) {
+  <div
+    class="course"
+    (click)="getCoursePreview(course.id)"
+    [routerLink]="[course.id]"
+  >
+    <app-course-info [course]="course" [view]="'card'"></app-course-info>
+  </div>
+  }
+</div>

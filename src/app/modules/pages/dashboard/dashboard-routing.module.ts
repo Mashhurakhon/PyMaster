@@ -8,7 +8,7 @@ export const DashboardRoutes: Routes = [
   {
     path: DASHBOARD_ROUTES.DASHBOARD,
     loadComponent: () =>
-      import('./progress/progress.component').then((c) => c.ProgressComponent),
+      import('./profile/profile.component').then((c) => c.ProfileComponent),
     title: 'Панель управления',
   },
   {

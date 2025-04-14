@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CoursesComponent } from './courses.component';
-import { CoursePreviewComponent } from './course-preview/course-preview.component';
-import { LessonComponent } from './lesson/lesson.component';
+import { CoursePreviewComponent } from './pages/course-preview/course-preview.component';
+import { LessonComponent } from './pages/lesson/lesson.component';
+import { CourseListComponent } from './pages/course-list/course-list.component';
 
 export const CourseRoutes: Routes = [
     {
         path: '',
-        component: CoursesComponent,
+        component: CourseListComponent,
         title: 'Курсы'
     },
     {
