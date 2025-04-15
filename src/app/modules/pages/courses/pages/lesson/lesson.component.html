@@ -1,1 +1,19 @@
-<p>lesson works!</p>
+<div class="lesson">
+  <div class="lesson-header">
+    <div class="back" (click)="goBack()">
+        <span class="icon icon-arrow-left-btn icon-size-32"></span>
+    </div>
+    <div class="flex gap-5">
+      <app-theme></app-theme>
+      <span class="icon icon-heart icon-size-28"></span>
+    </div>
+  </div>
+  <div class="lesson-main">
+    <div class="lesson-block">hello</div>
+  </div>
+  <div class="lesson-footer">
+    <app-button [color]="'primary'" [size]="'large'">
+      @if(true) { Продолжить } @else { Проверить }
+    </app-button>
+  </div>
+</div>

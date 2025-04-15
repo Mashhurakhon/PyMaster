@@ -1,10 +1,10 @@
 .btn {
   padding: 8px 14px;
   border-radius: 10px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
   font-weight: 500;
-  color: var(--black-color);
+  color: white;
   border: none;
   display: flex;
   justify-content: center;
@@ -14,12 +14,20 @@
   position: relative;
   white-space: nowrap;
 
+  &-small {
+    padding: 4px 10px;
+    font-size: 12px;
+  }
+  &-large {
+    padding: 12px 18px;
+    font-size: 20px;
+  }
 
   &-success {
     padding: 9px 10px;
     background: var(--btn-success-bg);
     border: 1px solid var(--btn-success-bg);
-    color: var(--white-color);
+    color: white;
 
     &:hover {
       opacity: 0.9;
@@ -33,7 +41,7 @@
   &-primary {
     background: var(--btn-primary);
     border: 1px solid var(--btn-primary);
-    color: var(--white-color);
+    color: white;
 
     ::ng-deep .loader__spin {
       border-color: transparent;
@@ -54,7 +62,7 @@
   &-secondary {
     border: 1px solid var(--btn-secondary-border);
     background: transparent;
-    color: var(--btn-default-color);
+    color: white;
 
     &:hover {
       border: 1px solid var(--btn-secondary-hover);
@@ -70,7 +78,7 @@
   &-default {
     background: var(--btn-default-bg);
     padding: 10px 6px;
-    color: var(--btn-default-color);
+    color: white;
 
   }
 
@@ -78,7 +86,7 @@
     border-radius: 16px;
     background: var(--btn-gray-bg);
     padding: 9px 10px;
-    color: var(--btn-default-color);
+    color: white;
 
     ::ng-deep .icon:not(.icon-refresh) {
       background: var(--btn-default-color);
@@ -92,13 +100,13 @@
     padding: 9px 10px;
     background: var(--btn-danger-bg);
     border: 1px solid var(--btn-danger-bg);
-    color: var(--white-color);
+    color: white;
   }
   &-warning {
     padding: 9px 10px;
     background: var(--btn-warning-bg);
     border: 1px solid var(--btn-warning-bg);
-    color: var(--white-color);
+    color: white;
   }
 
   &:disabled {
@@ -108,7 +116,7 @@
 
   &-link {
     text-decoration: underline;
-    color: var(--primary-color);
+    color: white;
     width: auto;
     padding: 0;
     text-decoration-skip: auto;

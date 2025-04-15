@@ -7,6 +7,7 @@
     mask-position: center;
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
+    cursor: pointer;
     
     &-size-20 {
         width: 20px;
@@ -68,5 +69,17 @@
     &-moon {
         -webkit-mask: url('../../assets/icons/moon.svg') no-repeat 50% 50%;
         mask: url('../../assets/icons/moon.svg') no-repeat 50% 50%;
+    }
+    &-heart {
+        -webkit-mask: url('../../assets/icons/heart.svg') no-repeat 50% 50%;
+        mask: url('../../assets/icons/heart.svg') no-repeat 50% 50%;
+    }
+    &-arrow-left-btn {
+        -webkit-mask: url('../../assets/icons/arrow-left-button.svg') no-repeat 50% 50%;
+        mask: url('../../assets/icons/arrow-left-button.svg') no-repeat 50% 50%;
+    }
+    &-arrow-left {
+        -webkit-mask: url('../../assets/icons/arrow-left.svg') no-repeat 50% 50%;
+        mask: url('../../assets/icons/arrow-left.svg') no-repeat 50% 50%;
     }
 }
