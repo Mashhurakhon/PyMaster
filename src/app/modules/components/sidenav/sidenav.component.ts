@@ -19,20 +19,16 @@ export class SidenavComponent {
   public currentRoute: string = '';
   public sidebar: SidebarInterface[] = [
     {
-      text: 'Dashboard',
-      icon: 'dashboard',
-      link: DASHBOARD_ROUTES.DASHBOARD,
+      text: 'Профиль',
+      icon: 'profile',
+      link: DASHBOARD_ROUTES.PROFILE,
     },
     {
       text: 'Курсы',
       icon: 'course',
       link: DASHBOARD_ROUTES.COURSES,
     },
-    {
-      text: 'Профиль',
-      icon: 'profile',
-      link: DASHBOARD_ROUTES.PROFILE,
-    },
+
     {
       text: 'Прогресс',
       icon: 'progress',

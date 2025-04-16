@@ -2,7 +2,7 @@
   @for(item of sidebar; track item) {
   <a
     mat-button
-    routerLink="dashboard/{{ item.link }}"
+    routerLink="{{ item.link }}"
     routerLinkActive="active"
   >
     <span class="icon icon-{{ item.icon }} icon-size-20"></span>

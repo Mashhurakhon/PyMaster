@@ -21,4 +21,8 @@ export class CoursePreviewComponent {
       'Learn the fundamentals of Angular. Learn the fundamentals of Angular. Learn the fundamentals of Angular',
     image: 'https://angular.io/assets/images/logos/angular/angular.svg',
   };
+
+  public sendHideSidebarMsg() {
+    
+  }
 }

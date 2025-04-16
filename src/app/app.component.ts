@@ -1,11 +1,12 @@
 import { Component, inject, OnInit } from '@angular/core';
-import { DashboardComponent } from "./modules/pages/dashboard/dashboard.component";
 import { LocalstorageService } from './core/services/localstorage.service';
+import { RouterModule } from '@angular/router';
+import { DashboardComponent } from "./modules/pages/dashboard/dashboard.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [ DashboardComponent],
+  imports: [RouterModule, DashboardComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

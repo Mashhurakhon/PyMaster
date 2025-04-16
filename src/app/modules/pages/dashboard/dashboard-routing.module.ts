@@ -8,53 +8,50 @@ export const DashboardRoutes: Routes = [
   {
     path: DASHBOARD_ROUTES.DASHBOARD,
     loadComponent: () =>
-      import('./profile/profile.component').then((c) => c.ProfileComponent),
+      import('./dashboard.component').then((c) => c.DashboardComponent),
+    children: [
+      {
+        path: DASHBOARD_ROUTES.COURSES,
+        loadChildren: () =>
+          import('./../courses/course-routing.module').then((r) => r.CourseRoutes),
+        title: 'Курсы',
+      },
+      {
+        path: DASHBOARD_ROUTES.PROFILE,
+        loadComponent: () =>
+          import('./profile/profile.component').then((c) => c.ProfileComponent),
+        title: 'Профиль',
+      },
+      {
+        path: DASHBOARD_ROUTES.PROGRESS,
+        loadComponent: () =>
+          import('./progress/progress.component').then((c) => c.ProgressComponent),
+        title: 'Прогресс',
+      },
+      {
+        path: DASHBOARD_ROUTES.CERTIFICATES,
+        loadComponent: () =>
+          import('./certificates/certificates.component').then(
+            (c) => c.CertificatesComponent
+          ),
+        title: 'Сертификаты',
+      },
+      {
+        path: DASHBOARD_ROUTES.NOTIFICATIONS,
+        loadComponent: () =>
+          import('./notifications/notifications.component').then(
+            (c) => c.NotificationsComponent
+          ),
+        title: 'Уведомления',
+      },
+    ] ,
     title: 'Панель управления',
-  },
-  {
-    path: DASHBOARD_ROUTES.COURSES,
-    loadChildren: () =>
-      import('./../courses/course-routing.module').then((r) => r.CourseRoutes),
-    title: 'Курсы',
-  },
-  {
-    path: DASHBOARD_ROUTES.PROFILE,
-    loadComponent: () =>
-      import('./profile/profile.component').then((c) => c.ProfileComponent),
-    title: 'Профиль',
-  },
-  {
-    path: DASHBOARD_ROUTES.PROGRESS,
-    loadComponent: () =>
-      import('./progress/progress.component').then((c) => c.ProgressComponent),
-    title: 'Прогресс',
-  },
-  {
-    path: DASHBOARD_ROUTES.CERTIFICATES,
-    loadComponent: () =>
-      import('./certificates/certificates.component').then(
-        (c) => c.CertificatesComponent
-      ),
-    title: 'Сертификаты',
-  },
-  {
-    path: DASHBOARD_ROUTES.NOTIFICATIONS,
-    loadComponent: () =>
-      import('./notifications/notifications.component').then(
-        (c) => c.NotificationsComponent
-      ),
-    title: 'Уведомления',
   },
   {
     path: '',
     redirectTo: DASHBOARD_ROUTES.DASHBOARD,
     pathMatch: 'full',
-  },
-  {
-    path: APP_ROUTES.NOTFOUND,
-    component: NotfoundComponent,
-    title: 'Страница не найдена',
-  },
+  }
 ];
 
 @NgModule({

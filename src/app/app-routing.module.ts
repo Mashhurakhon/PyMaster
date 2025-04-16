@@ -7,7 +7,7 @@ export const routes: Routes = [
   {
     path: APP_ROUTES.HOME,
     loadComponent: () =>
-      import('./modules/pages/home/home.component').then(
+      import('./modules/pages/guest-pages/home/home.component').then(
         (c) => c.HomeComponent
       ),
     title: 'Главная',
@@ -36,7 +36,7 @@ export const routes: Routes = [
       ),
   },
   {
-    path: APP_ROUTES.HOME,
+    path: APP_ROUTES.DASHBOARD,
     loadComponent: () =>
       import('./modules/pages/dashboard/dashboard.component').then(
         (c) => c.DashboardComponent
