@@ -33,11 +33,12 @@
       </button>
     </div>
     <div class="hidden lg:flex lg:gap-x-12">
-      <a href="#" class="text-sm/6 font-semibold text-gray-900">Главная</a>
-      <a href="#" class="text-sm/6 font-semibold text-gray-900">Курсы</a>
+      @for(link of links; track link) {
+        <a [routerLink]="[link.link]" class="text-base font-semibold text-gray-900">{{ link.text }}</a>
+      }
     </div>
     <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-      <a class="text-sm/6 font-semibold text-gray-900" [routerLink]="['auth', 'login']"
+      <a class="text-base font-semibold text-gray-900" [routerLink]="['auth', 'login']"
         >Вход <span aria-hidden="true">&rarr;</span></a
       >
     </div>

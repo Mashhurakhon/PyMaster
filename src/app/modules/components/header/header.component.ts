@@ -14,4 +14,23 @@ import { RouterModule } from '@angular/router';
 })
 export class HeaderComponent {
   public isChecked: boolean = false;
+
+  public links = [
+    {
+      link: '',
+      text: 'Главная'
+    },
+    {
+      link: 'courses/',
+      text: 'Курсы'
+    },
+    {
+      link: 'contacts/',
+      text: 'Контакты'
+    },
+    {
+      link: 'about/',
+      text: 'О нас'
+    }
+  ]
 }
