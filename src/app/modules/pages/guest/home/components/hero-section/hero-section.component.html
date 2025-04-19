@@ -40,8 +40,8 @@
       Поднимай свои навыки на новый уровень с нашими курсам по Python. Регистрируйся, учись, практикуйся — и достигай успеха.
       </p>
       <div class="mt-10 flex items-center justify-center gap-x-6">
-        <app-button color="primary" size="medium">Начать обучение</app-button>
-        <app-button color="secondary" size="medium"
+        <app-button color="primary" size="medium" [routerLink]="['auth/login']">Начать обучение</app-button>
+        <app-button color="secondary" size="medium" [routerLink]="['auth/register']" 
           >Узнать больше <span aria-hidden="true">&rarr;</span></app-button
         >
       </div>

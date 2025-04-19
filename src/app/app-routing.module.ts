@@ -15,6 +15,10 @@ export const routes: Routes = [
   },
   {
     path: APP_ROUTES.AUTH,
+    loadComponent: () =>
+      import('./modules/pages/auth/auth.component').then(
+        (c) => c.AuthComponent
+      ),
     loadChildren: () =>
       import('./modules/pages/auth/auth-routing.module').then(
         (r) => r.AuthRoutes
@@ -30,7 +34,7 @@ export const routes: Routes = [
     title: 'Панель управления',
     // canActivate: [AurhGuard]
   },
-  
+
   {
     path: APP_ROUTES.NOTFOUND,
     component: NotfoundComponent,
