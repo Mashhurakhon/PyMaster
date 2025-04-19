@@ -5,7 +5,7 @@
   width: 100%;
 }
 .sidenav a{
-  color: #333;
+  color: var(--black-color);
   text-decoration: none;
   padding: 10px;
   display: block;
@@ -18,17 +18,17 @@
 .sidenav a:hover {
   // background-color: rgba(104, 195, 255, 0.742);
   background-color: var(--sidenav-item-hover);
-  color: var(--white-color);
+  color: white;
 
   & .icon {
-    background-color: var(--white-color);
+    background-color: white;
   }
 }
 .sidenav a.active {
   background-color: var(--sidenav-bg);
-  color: var(--white-color);
+  color: white;
 
   & .icon {
-    background-color: var(--white-color);
+    background-color: white;
   }
 }

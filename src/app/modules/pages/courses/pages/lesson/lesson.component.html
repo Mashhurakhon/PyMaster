@@ -1,1 +1,30 @@
-<p>lesson works!</p>
+<div class="lesson">
+  <!-- header -->
+  <div class="lesson-header">
+    <div class="back" (click)="goBack()">
+      <span class="icon icon-arrow-left-btn icon-size-32"></span>
+    </div>
+    <div class="flex gap-5">
+      <app-theme></app-theme>
+      <span class="icon icon-heart icon-size-28"></span>
+    </div>
+  </div>
+  <!-- main content starts-->
+  <div class="lesson-main overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-gray-300">
+    <div class="lesson-block">
+      @if(true) {
+      <p class="lesson-title">Название урока</p>
+      }
+      <app-theory-block [data]="theory"></app-theory-block>
+      <app-illustration [image]=img [description]=description></app-illustration>
+    </div>
+  </div>
+  <!-- main content ends -->
+
+  <!-- footer -->
+  <div class="lesson-footer">
+    <app-button [color]="'primary'" [size]="'large'">
+      @if(true) { Продолжить } @else { Проверить }
+    </app-button>
+  </div>
+</div>

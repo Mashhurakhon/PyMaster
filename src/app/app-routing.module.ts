@@ -1,19 +1,24 @@
 import { Routes } from '@angular/router';
 import { APP_ROUTES } from './app-routes';
-import { DashboardRoutes } from './modules/pages/dashboard/dashboard-routing.module';
 import { NotfoundComponent } from './modules/pages/notfound/notfound.component';
+import { GuestRoutingModule } from './modules/pages/guest/guest-routing.module';
 
 export const routes: Routes = [
   {
     path: APP_ROUTES.HOME,
     loadComponent: () =>
-      import('./modules/pages/home/home.component').then(
-        (c) => c.HomeComponent
+      import('./modules/pages/guest/guest.component').then(
+        (c) => c.GuestComponent
       ),
+    children: GuestRoutingModule,
     title: 'Главная',
   },
   {
     path: APP_ROUTES.AUTH,
+    loadComponent: () =>
+      import('./modules/pages/auth/auth.component').then(
+        (c) => c.AuthComponent
+      ),
     loadChildren: () =>
       import('./modules/pages/auth/auth-routing.module').then(
         (r) => r.AuthRoutes
@@ -27,24 +32,9 @@ export const routes: Routes = [
         (r) => r.DashboardRoutes
       ),
     title: 'Панель управления',
-  },
-  {
-    path: APP_ROUTES.COURSES,
-    loadChildren: () =>
-      import('./modules/pages/courses/course-routing.module').then(
-        (r) => r.CourseRoutes
-      ),
-  },
-  {
-    path: APP_ROUTES.HOME,
-    loadComponent: () =>
-      import('./modules/pages/dashboard/dashboard.component').then(
-        (c) => c.DashboardComponent
-      ),
-    title: 'панель управления',
-    children: DashboardRoutes,
     // canActivate: [AurhGuard]
   },
+
   {
     path: APP_ROUTES.NOTFOUND,
     component: NotfoundComponent,

@@ -18,7 +18,7 @@ export const CourseRoutes: Routes = [
     {
         path: ':id/lesson/:id',
         component: LessonComponent,
-        title: 'Урок'
+        title: 'Урок',
     }
 ];
 

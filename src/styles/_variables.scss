@@ -38,6 +38,8 @@
   --sidenav-bg: rgba(62, 178, 254, 0.892);
   --sidenav-item-hover:  rgba(104, 195, 255, 0.862);
   --sidenav-item-active: #d5d5d5;
+  // shadow
+  --shadow-color: rgba(0, 0, 0, 0.5);
 }
 
 html.dark {
@@ -76,4 +78,5 @@ html.dark {
   --input-text-color: var(--white-color);
   --input-active-border: var(--btn-secondary-hover);
   --input-invalid-border: #ff477e;
+  --shadow-color: rgba(245, 245, 245, 0.5);
 }
