@@ -1,1 +1,16 @@
-<p>faq-section works!</p>
+<div class="faq max-w-3xl mx-auto px-6 py-10">
+  <mat-accordion class="space-y-6" multi="true">
+    @for(item of faqItems; track item){
+      <mat-expansion-panel class="rounded-md border border-gray-300 shadow-xs overflow-hidden">
+        <mat-expansion-panel-header class="hover:bg-gray-100 transition-colors px-6 py-5">
+          <mat-panel-title class="text-xl font-medium text-gray-800">
+            {{ item.question }}
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div class="p-6 bg-white">
+          <p class="text-gray-700 text-base leading-relaxed cursor-pointer">{{ item.answer }}</p>
+        </div>
+      </mat-expansion-panel>
+    }
+  </mat-accordion>
+</div>

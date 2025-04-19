@@ -1,0 +1,19 @@
+.faq {
+    margin: auto;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+}
+.item {
+    box-shadow: none;
+
+}
+.item .question {
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 2.2;
+}
+.answer {
+    line-height: 1.8;
+    font-size: 1.2rem;
+}

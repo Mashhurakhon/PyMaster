@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CourseInterface } from '../../../../../core/models/course.interface';
 import { RouterModule } from '@angular/router';
 import { CourseInfoComponent } from '../../components/course-info/course-info.component';
@@ -11,7 +11,7 @@ import { CourseInfoComponent } from '../../components/course-info/course-info.co
   styleUrl: './course-list.component.scss',
 })
 export class CourseListComponent {
-  public courses: CourseInterface[] = [
+  @Input() courses: CourseInterface[] = [
     {
       id: '1',
       title: 'Angular Fundamentals',
