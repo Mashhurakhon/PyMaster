@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 import { APP_ROUTES } from './app-routes';
 import { NotfoundComponent } from './modules/pages/notfound/notfound.component';
 import { GuestRoutingModule } from './modules/pages/guest/guest-routing.module';
+import { AuthGuard } from './core/guards/auth.guard';
 
 export const routes: Routes = [
   {
@@ -32,7 +33,7 @@ export const routes: Routes = [
         (r) => r.DashboardRoutes
       ),
     title: 'Панель управления',
-    // canActivate: [AurhGuard]
+    canActivate: [AuthGuard]
   },
 
   {

@@ -1,14 +1,16 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { ThemeComponent } from "../../../shared/components/theme/theme.component";
 
 @Component({
   selector: 'app-header',
   standalone: true,
   imports: [
     FormsModule,
-    RouterModule
-  ],
+    RouterModule,
+    ThemeComponent
+],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })

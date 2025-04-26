@@ -1,7 +1,7 @@
 <div class="course-info" [ngClass]="view">
   <img [src]="course.image" alt="Иллюстрация к курсу" />
-  <p class="title">{{ course.title }}</p>
-  <div class="description">
+  <p class="title  text-gray-900">{{ course.title }}</p>
+  <div class="description  text-gray-900">
     @if(view === 'detail') {
     <p>Course description:</p>
     }
