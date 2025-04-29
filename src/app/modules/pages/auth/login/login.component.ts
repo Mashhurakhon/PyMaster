@@ -1,7 +1,8 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { FormBuilder,FormGroup,FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { ButtonComponent } from "../../../../shared/components/button/button.component";
+import { LocalstorageService } from '../../../../core/services/localstorage.service';
 
 @Component({
   selector: 'app-login',
@@ -14,7 +15,8 @@ export class LoginComponent implements OnInit{
   public loginForm!: FormGroup;
 
   private _fb = inject(FormBuilder);
-
+  private _localStorage = inject(LocalstorageService);
+  private _router = inject(Router);
   ngOnInit(): void {
     this._init();
   }
@@ -26,6 +28,10 @@ export class LoginComponent implements OnInit{
   }
 
   public onSubmit() {
-    console.log(this.loginForm.value);
+    const role = "user";
+
+    this._localStorage.set("accessToken", "token");
+    this._localStorage.set("role", role);
+    this._router.navigate(['/dashboard']);    
   }
 }

@@ -1,4 +1,4 @@
-<button [type]="type" class="btn btn-{{ color }} btn-{{ size}}" [disabled]="disabled">
+<button [type]="type" class="btn btn-{{ color }} btn-{{ size}} {{ btnClass }}" [disabled]="disabled">
     <ng-content></ng-content>
     @if(isLoading) {
         <mat-spinner></mat-spinner>

@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatIcon } from '@angular/material/icon';
 import { MatMenu, MatMenuTrigger } from '@angular/material/menu';
 import { MatSlideToggle } from '@angular/material/slide-toggle';
 import { ThemeComponent } from '../../../shared/components/theme/theme.component';
+import { AuthService } from '../../../core/services/auth.service';
 
 @Component({
   selector: 'app-dashboard-header',
@@ -19,5 +20,11 @@ import { ThemeComponent } from '../../../shared/components/theme/theme.component
   styleUrl: './dashboard-header.component.scss'
 })
 export class DashboardHeaderComponent {
-  public isChecked: boolean = false
+  private _auth = inject(AuthService);
+
+  public isChecked: boolean = false;
+
+  public logout() {
+    this._auth.logout();
+  }
 }

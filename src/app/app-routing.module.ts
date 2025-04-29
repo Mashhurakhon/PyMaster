@@ -3,6 +3,7 @@ import { APP_ROUTES } from './app-routes';
 import { NotfoundComponent } from './modules/pages/notfound/notfound.component';
 import { GuestRoutingModule } from './modules/pages/guest/guest-routing.module';
 import { AuthGuard } from './core/guards/auth.guard';
+import { RoleGuard } from './core/guards/role.guard';
 
 export const routes: Routes = [
   {
@@ -33,7 +34,8 @@ export const routes: Routes = [
         (r) => r.DashboardRoutes
       ),
     title: 'Панель управления',
-    canActivate: [AuthGuard]
+    canActivate: [AuthGuard, RoleGuard],
+    data: { roles: ['user'] },
   },
 
   {

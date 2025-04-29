@@ -28,6 +28,7 @@ export class ButtonComponent {
   @Input() size: ButtonSize;
   @Input({ transform: booleanAttribute }) disabled: boolean;
   @Input({ transform: booleanAttribute}) isLoading: boolean = false;
+  @Input() btnClass: string = ""
 
   constructor() {
     this.type = 'button';
