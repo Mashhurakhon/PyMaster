@@ -11,5 +11,8 @@ export class FormFieldComponent {
   @Input() label:string = "";
   @Input({ required: true }) type = "text";
   @Input() placeholder = "";
+  @Input() value = "";
   @Input() validationMsg:string = "";
+  @Input() control = "";
 }
+
