@@ -2,7 +2,7 @@ export interface ProfileInterface {
     id: string;
     firstName: string;
     lastName: string;
-    login: string;
+    username: string;
     email: string;
     role: string;
 }
