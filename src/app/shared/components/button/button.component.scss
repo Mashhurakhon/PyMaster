@@ -14,7 +14,7 @@
 
   &-small {
     padding: 4px 10px;
-    font-size: 12px;
+    font-size: 14px;
   }
   &-medium {
     padding: 10px 16px;
@@ -64,8 +64,7 @@
   &-secondary {
     border: 2px solid var(--btn-secondary-border);
     background: transparent;
-    color: var(--btn-secondary-border);
-    font-weight: 600;
+    color: var(--btn-secondary-color);
 
     &:hover {
       border: 1px solid var(--btn-secondary-hover);

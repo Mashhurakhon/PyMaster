@@ -1,4 +1,4 @@
-<footer class="px-4 pb-8 pt-24 bg-white md:p-8 lg:p-10 dark:bg-gray-800">
+<footer class="px-4 pb-8 pt-8 sm:pt-24 bg-white md:p-8 lg:p-10 dark:bg-gray-800">
   <div class="mx-auto max-w-screen-xl text-center">
     <a
       href="#"
@@ -7,16 +7,16 @@
       <img src="assets/images/logo.png" alt="" class="h-12" />
       PyMaster
     </a>
-    <p class="text-center my-[30px] text-gray-400">
+    <p class="text-center my-6 text-gray-400">
       Учись Python легко и интересно!<br> Проходи курсы, решай задачи и получай
       сертификаты.
     </p>
     <ul
-      class="flex flex-wrap justify-center items-center mb-6 text-gray-900 dark:text-white"
+      class="flex flex-wrap justify-center items-center my-6 text-gray-900 dark:text-white"
     >
       @for (link of links; track link;) {
       <li>
-        <a href="#" class="mr-4 hover:underline md:mr-6">{{ link.title }}</a>
+        <a [routerLink]="link.link"  class="mr-4 hover:underline md:mr-6">{{ link.title }}</a>
       </li>
       }
     </ul>

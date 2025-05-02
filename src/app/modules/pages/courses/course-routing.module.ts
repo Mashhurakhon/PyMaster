@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CoursePreviewComponent } from './pages/course-preview/course-preview.component';
 import { LessonComponent } from './pages/lesson/lesson.component';
 import { CourseListComponent } from './pages/course-list/course-list.component';
+import { AuthGuard } from '../../../core/guards/auth.guard';
 
 export const CourseRoutes: Routes = [
     {
@@ -19,6 +20,7 @@ export const CourseRoutes: Routes = [
         path: ':id/lesson/:id',
         component: LessonComponent,
         title: 'Урок',
+        canActivate: [AuthGuard]
     }
 ];
 

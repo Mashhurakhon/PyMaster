@@ -17,11 +17,7 @@
                   [matMenuTriggerFor]="menu"
                 >
                 <mat-menu #menu="matMenu">
-                    <button mat-menu-item>
-                      <mat-icon>dialpad</mat-icon>
-                      <span>Redial</span>
-                    </button>
-                    <button mat-menu-item>
+                    <button mat-menu-item (click)="logout()" class="flex items-center gap-2 pl-2 dark:text-black">
                       <mat-icon>notifications_off</mat-icon>
                       <span>выход</span>
                     </button>

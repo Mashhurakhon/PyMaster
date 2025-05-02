@@ -4,6 +4,7 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    color: var(--black-color);
 
     & img {
       width: 80%;
@@ -16,9 +17,11 @@
       font-weight: bold;
       font-size: 1.3rem;
       text-align: center;
+      color: var(--black-color);
     }
     & .description {
       text-align: center;
+      color: var(--black-color);
     }
   }
 
@@ -34,11 +37,13 @@
       font-size: 2.5rem;
       font-weight: 700;
       margin-bottom: 20px;
+      color: var(--black-color);
     }
 
     & .description {
       font-weight: 500;
       margin-top: 20px;
+      color: var(--black-color);
     }
 
     & .description p {

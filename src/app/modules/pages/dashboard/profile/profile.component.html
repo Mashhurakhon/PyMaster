@@ -1,3 +1,32 @@
-<app-button color="primary" size="medium" type="button" (click)="getCourses()">
-    button
-</app-button>
+<form method="post" [formGroup]="profileForm" (ngSubmit)="onSubmit()" class="max-w-5xl mx-auto p-6 rounded-xl shadow-md space-y-6">
+    <div class="flex flex-col-reverse md:flex-row gap-8">
+        @if(user$ | async; as user) {
+
+        }
+      <div class="flex-1 space-y-4">
+        <div>
+          <app-form-field type="text" label="Логин" control="login"></app-form-field>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <app-form-field type="text" label="Имя" control="firstname"></app-form-field>
+          <app-form-field type="text" label="Фамилия" control="lastname"></app-form-field>
+        </div>
+        <div>
+          <app-form-field type="email" label="Электронная почта" control="email"></app-form-field>
+        </div>
+        <div>
+          <p class="text-lg font-semibold mb-2">Изменить пароль</p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <app-form-field type="password" label="Пароль" control="password"></app-form-field>
+            <app-form-field type="password" label="Подтвердите пароль" control="confirmPassword"></app-form-field>
+          </div>
+        </div>
+      </div>
+  
+      <div class="w-full md:w-56 flex-shrink-0">
+        <p class="text-lg font-semibold mb-2">Фото</p>
+        <!-- <app-image-uploader></app-image-uploader> -->
+      </div>
+    </div>
+  </form>
+  

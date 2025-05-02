@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss'
 })
@@ -14,27 +15,27 @@ export class FooterComponent {
       title: "Главная"
     },
     {
-      link: "",
+      link: "courses/",
       title: "Курсы"
     },
     {
-      link: "",
+      link: "about/",
       title: "О нас"
     },
     {
-      link: "",
+      link: "policy/",
       title: "Политика конфиденциальности"
     },
     {
-      link: "",
+      link: "terms/",
       title: "Условия использования"
     },
     {
-      link: "",
+      link: "faq/",
       title: "FAQ"
     },
     {
-      link: "",
+      link: "contacts/",
       title: "Контакты"
     },
   ]

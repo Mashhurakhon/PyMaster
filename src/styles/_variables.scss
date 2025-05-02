@@ -18,6 +18,7 @@
   --btn-secondary-hover: #2db2dc;
   --btn-secondary-bg-hover: #edfaff;
   --btn-secondary-bg-active: #d1f1ff;
+  --btn-secondary-color: #20acd8;
   //btn-default
   --btn-default-bg: rgba(255, 255, 255, 0.5);
   --btn-default-color: var(--black-color);
@@ -65,6 +66,7 @@ html.dark {
   --btn-secondary-hover: #186f75;
   --btn-secondary-bg-hover: #162c2e;
   --btn-secondary-bg-active: #0b1d1f;
+  --btn-secondary-color: white;
   //btn-default
   --btn-default-bg: var(--bg-auth-color);
   --btn-default-color: var(--white-color);
