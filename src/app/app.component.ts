@@ -25,6 +25,4 @@ export class AppComponent implements OnInit {
       this._router.navigate(['/dashboard']);
     }
   }
-
-  
 }
