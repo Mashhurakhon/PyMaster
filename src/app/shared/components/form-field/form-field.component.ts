@@ -14,5 +14,6 @@ export class FormFieldComponent {
   @Input() value = "";
   @Input() validationMsg:string = "";
   @Input() control = "";
+  @Input() id = "";
 }
 

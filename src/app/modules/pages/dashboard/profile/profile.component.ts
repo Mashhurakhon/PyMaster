@@ -10,10 +10,11 @@ import {
 import { ProfileInterface } from '../../../../core/models/profile.interface';
 import { Observable, of } from 'rxjs';
 import { CommonModule } from '@angular/common';
+import { ImageUploaderComponent } from "../../../../shared/components/image-uploader/image-uploader.component";
 @Component({
   selector: 'app-profile',
   standalone: true,
-  imports: [CommonModule, FormFieldComponent, ReactiveFormsModule, FormsModule],
+  imports: [CommonModule, FormFieldComponent, ReactiveFormsModule, FormsModule, ImageUploaderComponent],
   templateUrl: './profile.component.html',
   styleUrl: './profile.component.scss',
 })
@@ -23,7 +24,7 @@ export class ProfileComponent implements OnInit {
     id: '1',
     firstName: 'Mashhurakhon',
     lastName: 'Alimukhamedova',
-    login: 'Vfi[ehf[jy03',
+    username: 'Vfi[ehf[jy03',
     email: 'masha@info.com',
     role: 'user',
   });
